@@ -1,0 +1,16 @@
+{application, jsonrpcc,
+ [
+  {description, "JSON-RPC client application"},
+  {vsn, "1.0"},
+  {registered, [jsonrpcc]},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  crypto,
+                  ssl,
+                  public_key,
+                  hackney
+                 ]},
+  {mod, { jsonrpcc, []}},
+  {env, []}
+ ]}.
